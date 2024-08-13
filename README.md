@@ -2,22 +2,24 @@
 
 ## User Stories:
 
-- You should have an input element with an id of "number"
+- You should have an __input__ element with an id of *"number"*
 
-- You should have a button element with an id of "convert-btn"
+- You should have a __button__ element with an id of *"convert-btn"*
 
-- You should have a div, span or p element with an id of output
+- You should have a __div__, __span__ or __p__ element with an id of *output*
 
-- When you click on the #convert-btn element without entering a value into the #number element, the #output element should contain the text "Please enter a valid number"
+- When you click on the __#convert-btn__ element without entering a value into the __#number__ element, the __#output__ element should contain the text *"Please enter a valid number"*
 
-- When the #number element contains the number -1 and the #convert-btn element is clicked, the #output element should contain the text "Please enter a number greater than or equal to 1"
- - When the #number element contains the number 4000 or greater and the #convert-btn element is clicked, the #output element should contain the text "Please enter a number less than or equal to 3999"
+- When the __#number__ element contains the *number -1* and the __#convert-btn__ element is clicked, the __#output__ element should contain the text *"Please enter a number greater than or equal to 1"*
 
-- When the #number element contains the number 9 and the #convert-btn element is clicked, the #output element should contain the text "IX"
-- When the #number element contains the number 16 and the #convert-btn element is clicked, the #output element should contain the text "XVI"
+- When the **#number** element contains the *number 4000 or greater* and the __#convert-btn__ element is clicked, the __#output__ element should contain the text *"Please enter a number less than or equal to 3999"*
 
-- When the #number element contains the number 649 and the #convert-btn element is clicked, the #output element should contain the text "DCXLIX"
+- When the __#number__ element contains the *number 9* and the __#convert-btn__ element is clicked, the __#output__ element should contain the text *"IX"*
 
-- When the #number element contains the number 1023 and the #convert-btn element is clicked, the #output element should contain the text "MXXIII"
+- When the __#number__ element contains the _number 16_ and the __#convert-btn__ element is clicked, the __#output__ element should contain the text _"XVI"_
 
-- When the #number element contains the number 3999 and the #convert-btn element is clicked, the #output element should contain the text "MMMCMXCIX"
+- When the __#number__ element contains the _number 649_ and the __#convert-btn__ element is clicked, the __#output__ element should contain the text _"DCXLIX"_
+
+- When the __#number__ element contains the _number 1023_ and the __#convert-btn__ element is clicked, the __#output__ element should contain the text _"MXXIII"_
+
+- When the __#number__ element contains the _number 3999_ and the __#convert-btn__ element is clicked, the __#output__ element should contain the text __"MMMCMXCIX"__
