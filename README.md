@@ -22,4 +22,4 @@
 
 - When the __#number__ element contains the _number 1023_ and the __#convert-btn__ element is clicked, the __#output__ element should contain the text _"MXXIII"_
 
-- When the __#number__ element contains the _number 3999_ and the __#convert-btn__ element is clicked, the __#output__ element should contain the text __"MMMCMXCIX"__
+- When the __#number__ element contains the _number 3999_ and the __#convert-btn__ element is clicked, the __#output__ element should contain the text _"MMMCMXCIX"_
