@@ -1,10 +1,10 @@
-const numInput = document.getElementById("number").value;
+const numInput = document.getElementById("number");
 const output = document.getElementById("output");
 const convertBtn = document.getElementById("convert-btn");
 
 output.style.visibility = "hidden";
 
-const numValues = [
+const romanNums = [
     { value: 1000, numeral: 'M' },
     { value: 900, numeral: 'CM' },
     { value: 500, numeral: 'D' },
@@ -18,11 +18,37 @@ const numValues = [
     { value: 5, numeral: 'V' },
     { value: 4, numeral: 'IV' },
     { value: 1, numeral: 'I' }
-]
+];
 
-const convertNum = () => {
-    output.style.visibility = "visible";
+const numToRoman = (num, result = "") => {
+    if (num === 0) {
+        return result;
+    }
+    
+    if (num === "") {
+        return "Please enter a valid number";
+    } else if (num <= 0) {
+        return "Please enter a number greater than or equal to 1";
+    } else if (num >= 4000) {
+        return "Please enter a number less than or equal to 3999";
+    }
 
+    for (const { value, numeral } of romanNums) {
+        if (num >= value) {
+            return numToRoman(num - value, result + numeral);
+        }
+    }
 }
 
-convertBtn.addEventListener("click", convertNum);
+const outputFunc = (e) => {
+    e.preventDefault();
+    output.innerText = numToRoman(numInput.value);
+    output.style.visibility = "visible";
+}
+
+convertBtn.addEventListener("click", outputFunc);
+convertBtn.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        outputFunc();
+    }
+});
