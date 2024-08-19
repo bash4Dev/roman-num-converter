@@ -42,20 +42,23 @@ main {
 }
 
 form {
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 form, #output {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    border: 3px solid var(--white-color);
+    /* border: 3px solid var(--white-color); */
     background-color: var(--container-color);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+}
+
+#output {
+    text-align: center;
 }
 
 form label { 
@@ -63,9 +66,8 @@ form label {
 }
 
 form input#number, #convert-btn {
-    width: 80%;
-    padding: 8px;
-    border: none;
+    width: 84%;
+    padding: 10px;
     color: var(--white-color);
     font-size: 1.4rem;
     border: none;
@@ -84,21 +86,49 @@ footer {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
+    header h1 {
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+    }
+
     main {
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
+        width: 80%;
+        gap: 2rem;
+    }
+    
+    form {
+        gap: 1rem;
+    }
+
+    form, #output {
+        font-size: 1.4rem;
     }
 
     form input#number, #convert-btn {
         width: 90%;
-        /* padding: 8px;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    header h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    form input#number, #convert-btn {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    form, #output {
         border: none;
-        color: var(--white-color);
-        font-size: 1.4rem; */
+        font-size: 1.2rem;
     }
 }
